@@ -1,0 +1,135 @@
+ .gitignore                                         |    57 [32m+[m
+ .vscode/extensions.json                            |     1 [32m+[m
+ .vscode/settings.json                              |     7 [32m+[m
+ AGENTS.md                                          |    41 [32m+[m
+ App.tsx                                            |    37 [32m+[m
+ LICENSE                                            |    21 [32m+[m
+ README.md                                          |    57 [32m+[m[31m-[m
+ app.json                                           |    42 [32m+[m
+ assets/expo.icon/Assets/expo-symbol 2.svg          |     3 [32m+[m
+ assets/expo.icon/Assets/grid.png                   |   Bin [31m0[m -> [32m53681[m bytes
+ assets/expo.icon/icon.json                         |    40 [32m+[m
+ assets/images/android-icon-background.png          |   Bin [31m0[m -> [32m17549[m bytes
+ assets/images/android-icon-foreground.png          |   Bin [31m0[m -> [32m78796[m bytes
+ assets/images/android-icon-monochrome.png          |   Bin [31m0[m -> [32m4140[m bytes
+ assets/images/expo-badge-white.png                 |   Bin [31m0[m -> [32m4129[m bytes
+ assets/images/expo-badge.png                       |   Bin [31m0[m -> [32m4137[m bytes
+ assets/images/expo-logo.png                        |   Bin [31m0[m -> [32m3317[m bytes
+ assets/images/favicon.png                          |   Bin [31m0[m -> [32m1129[m bytes
+ assets/images/icon.png                             |   Bin [31m0[m -> [32m799005[m bytes
+ assets/images/logo-glow.png                        |   Bin [31m0[m -> [32m331624[m bytes
+ assets/images/react-logo.png                       |   Bin [31m0[m -> [32m6341[m bytes
+ assets/images/react-logo@2x.png                    |   Bin [31m0[m -> [32m14225[m bytes
+ assets/images/react-logo@3x.png                    |   Bin [31m0[m -> [32m21252[m bytes
+ assets/images/splash-icon.png                      |   Bin [31m0[m -> [32m3317[m bytes
+ assets/images/tabIcons/explore.png                 |   Bin [31m0[m -> [32m215[m bytes
+ assets/images/tabIcons/explore@2x.png              |   Bin [31m0[m -> [32m347[m bytes
+ assets/images/tabIcons/explore@3x.png              |   Bin [31m0[m -> [32m468[m bytes
+ assets/images/tabIcons/home.png                    |   Bin [31m0[m -> [32m253[m bytes
+ assets/images/tabIcons/home@2x.png                 |   Bin [31m0[m -> [32m343[m bytes
+ assets/images/tabIcons/home@3x.png                 |   Bin [31m0[m -> [32m479[m bytes
+ assets/images/tutorial-web.png                     |   Bin [31m0[m -> [32m58959[m bytes
+ assets/images/unicarpool-icon.png                  |   Bin [31m0[m -> [32m374378[m bytes
+ assets/images/unicarpool-monochrome.png            |   Bin [31m0[m -> [32m11248[m bytes
+ assets/images/unicarpool-splash.png                |   Bin [31m0[m -> [32m66752[m bytes
+ babel.config.js                                    |     9 [32m+[m
+ dialog-check.png                                   |     0
+ eslint.config.js                                   |    10 [32m+[m
+ index.ts                                           |     6 [32m+[m
+ metro.config.js                                    |     6 [32m+[m
+ nativewind-env.d.ts                                |     1 [32m+[m
+ package-lock.json                                  | 12725 [32m+++++++++++++++++++[m
+ package.json                                       |    56 [32m+[m
+ scripts/reset-project.js                           |   145 [32m+[m
+ src/components/AppButton.tsx                       |    94 [32m+[m
+ src/components/AppDialog.tsx                       |   268 [32m+[m
+ src/components/AppInput.tsx                        |    92 [32m+[m
+ src/components/RideCard.tsx                        |   102 [32m+[m
+ src/components/animated-icon.module.css            |     6 [32m+[m
+ src/components/animated-icon.tsx                   |   148 [32m+[m
+ src/components/animated-icon.web.tsx               |   108 [32m+[m
+ src/components/app-tabs.tsx                        |    32 [32m+[m
+ src/components/app-tabs.web.tsx                    |   116 [32m+[m
+ src/components/external-link.tsx                   |    25 [32m+[m
+ src/components/hint-row.tsx                        |    35 [32m+[m
+ src/components/themed-text.tsx                     |    57 [32m+[m
+ src/components/themed-view.tsx                     |    16 [32m+[m
+ src/components/ui/collapsible.tsx                  |    65 [32m+[m
+ src/components/web-badge.tsx                       |    43 [32m+[m
+ src/constants/theme.ts                             |    65 [32m+[m
+ src/features/auth/ForgotPasswordScreen.tsx         |   344 [32m+[m
+ src/features/auth/LoginScreen.tsx                  |   172 [32m+[m
+ src/features/auth/SignupScreen.tsx                 |   181 [32m+[m
+ src/features/auth/authApi.ts                       |   221 [32m+[m
+ src/features/auth/components/AuthCarBadge.tsx      |    28 [32m+[m
+ src/features/auth/components/AuthTextField.tsx     |    65 [32m+[m
+ src/features/auth/components/CampusHero.tsx        |    28 [32m+[m
+ src/features/auth/components/RolePicker.tsx        |    56 [32m+[m
+ src/features/auth/useMockUser.ts                   |    20 [32m+[m
+ src/features/auth/validation.ts                    |   118 [32m+[m
+ src/features/driver/CreateRideScreen.tsx           |   154 [32m+[m
+ src/features/driver/DriverHomeScreen.tsx           |   173 [32m+[m
+ src/features/driver/EditCancelRideScreen.tsx       |   300 [32m+[m
+ src/features/driver/ManageRequestsScreen.tsx       |   261 [32m+[m
+ src/features/driver/MyRidesScreen.tsx              |   174 [32m+[m
+ src/features/driver/components/DateTimeField.tsx   |    38 [32m+[m
+ src/features/driver/components/DriverStatsCard.tsx |    32 [32m+[m
+ src/features/driver/components/EmptyState.tsx      |    35 [32m+[m
+ src/features/driver/components/RequestCard.tsx     |   159 [32m+[m
+ src/features/driver/components/RideStatusBadge.tsx |    31 [32m+[m
+ src/features/driver/components/ScreenHeader.tsx    |    63 [32m+[m
+ src/features/driver/components/SeatCounter.tsx     |    69 [32m+[m
+ src/features/driver/driverApi.ts                   |    99 [32m+[m
+ src/features/driver/navigationParams.ts            |     6 [32m+[m
+ src/features/driver/previewData.ts                 |   502 [32m+[m
+ src/features/driver/rideValidation.ts              |   125 [32m+[m
+ src/features/driver/types.ts                       |    51 [32m+[m
+ src/features/profile/ChangePasswordScreen.tsx      |    70 [32m+[m
+ src/features/profile/EditProfileScreen.tsx         |   130 [32m+[m
+ src/features/profile/ProfileScreen.tsx             |   156 [32m+[m
+ src/features/profile/PublicProfileScreen.tsx       |    93 [32m+[m
+ src/features/profile/RateUserScreen.tsx            |   124 [32m+[m
+ src/features/profile/RatingsReviewsScreen.tsx      |   102 [32m+[m
+ src/features/profile/RideHistoryScreen.tsx         |   103 [32m+[m
+ src/features/profile/SettingsScreen.tsx            |   184 [32m+[m
+ src/features/profile/profileApi.ts                 |   200 [32m+[m
+ src/features/rideExperience/ChatListScreen.tsx     |   149 [32m+[m
+ src/features/rideExperience/ChatScreen.tsx         |   156 [32m+[m
+ .../rideExperience/ManageRequestsScreen.tsx        |   247 [32m+[m
+ .../rideExperience/NotificationsScreen.tsx         |   130 [32m+[m
+ .../rideExperience/RideCompletionScreen.tsx        |   295 [32m+[m
+ src/features/rideExperience/UpcomingRideScreen.tsx |   285 [32m+[m
+ src/features/rideExperience/rideExperienceApi.ts   |     0
+ src/features/rider/MyRequestsScreen.tsx            |   192 [32m+[m
+ src/features/rider/NotificationsScreen.tsx         |   223 [32m+[m
+ src/features/rider/RequestRideScreen.tsx           |   110 [32m+[m
+ src/features/rider/RideDetailsScreen.tsx           |   123 [32m+[m
+ src/features/rider/RiderHomeScreen.tsx             |   175 [32m+[m
+ src/features/rider/SearchRidesScreen.tsx           |   155 [32m+[m
+ src/features/rider/riderApi.ts                     |     0
+ src/features/rider/riderData.ts                    |    46 [32m+[m
+ src/global.css                                     |    13 [32m+[m
+ src/hooks/use-color-scheme.ts                      |     1 [32m+[m
+ src/hooks/use-color-scheme.web.ts                  |    21 [32m+[m
+ src/hooks/use-theme.ts                             |    14 [32m+[m
+ src/lib/database.types.ts                          |    45 [32m+[m
+ src/lib/formatters.ts                              |    42 [32m+[m
+ src/lib/supabase.ts                                |    44 [32m+[m
+ src/navigation/AppNavigator.tsx                    |   353 [32m+[m
+ src/navigation/navigationRef.ts                    |   132 [32m+[m
+ .../(driver)/_layout.tsx                           |    56 [32m+[m
+ src/original-expo-router-routes/(driver)/home.tsx  |     3 [32m+[m
+ .../(driver)/my-rides.tsx                          |     3 [32m+[m
+ .../(driver)/profile.tsx                           |    31 [32m+[m
+ src/original-expo-router-routes/_layout.tsx        |    26 [32m+[m
+ src/original-expo-router-routes/create-ride.tsx    |     3 [32m+[m
+ .../edit-cancel-ride.tsx                           |     3 [32m+[m
+ .../forgot-password.tsx                            |     3 [32m+[m
+ src/original-expo-router-routes/index.tsx          |     3 [32m+[m
+ .../manage-requests.tsx                            |     3 [32m+[m
+ src/original-expo-router-routes/rider.tsx          |     3 [32m+[m
+ src/original-expo-router-routes/sign-up.tsx        |     3 [32m+[m
+ supabase/migrations/20241022_driver_feature.sql    |   562 [32m+[m
+ tailwind.config.js                                 |    24 [32m+[m
+ tsconfig.json                                      |    28 [32m+[m
+ 134 files changed, 22907 insertions(+), 1 deletion(-)
